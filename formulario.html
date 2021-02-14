@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+<head>
+          <title>Guardar</title>
+          <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+
+	<div class="formulario">
+ <form action="operacion_guardar.php" method="POST">
+           
+<table>
+	<th>DATOS PERSONALES</th> 
+            <tr>
+                <td><input type="text" placeholder="ingresa tu nombre" name="nombre" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="ingresa tu apellido" name="apellido" required></td>   
+            </tr>
+            <tr>
+                <td>
+                      <input type="radio" name="genero" value="FEMENINO" required> FEMENINO
+                      <input type="radio" name="genero" value="MASCULINO" required> MASCULINO
+                </td>
+            </tr>
+            <tr>
+                <td><input type="email" placeholder="ingresa tu correo" name="email" required></td>
+            </tr>
+                <tr>
+                    <td><input type="phone"  placeholder="ingresa numero telefono" name="telefono" required></td>
+                </tr>
+            <tr>
+                <td>
+                	<select class= "seleccion" name="materia" required>
+                	<option selected hidden value="">MATERIAS</option> 
+                	<option value="calculo">CALCULO</option>
+                	<option value="fisica">FISICA</option>
+                	<option value="database">BASE DE DATOS</option>
+                	<option value="analisis">ANALISIS DE SISTEMAS</option>
+                	</select>
+                </td>
+            </tr>
+                <tr>
+                <td>
+                    <input type="submit" value="REGISTRAR" name="enviar">
+                </td>
+            </tr>
+        </table>
+            </form>
+        </div>
+
+</body>
+</html>     
+
+
